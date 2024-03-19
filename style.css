@@ -1,0 +1,327 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: "Raleway", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 500;
+    font-style: normal;
+}
+
+header .nav .left h1 {
+    font-weight: 600;
+}
+
+.main .left h1 {
+    font-family: "Poppins", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+    font-size: 3rem;
+}
+
+body {
+    min-height: 332vh;
+    /* Using viewport height to make the body responsive */
+    background: #030020;
+    color: white;
+}
+
+header .nav {
+    height: 7vh;
+    /* Using percentage for responsive height */
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    background-color: rgb(4, 6, 46);
+}
+
+header .nav .left {
+    font-size: 1.5rem;
+    cursor: pointer;
+    position: relative;
+    right: 3%;
+}
+
+header .nav .right ul {
+    display: flex;
+    gap: 2rem;
+    list-style-type: none;
+}
+
+header .nav .right ul li a {
+    text-decoration: none;
+    color: rgb(155, 155, 155);
+    cursor: pointer;
+    font-weight: 600;
+    transition: color 0.4s ease;
+    position: relative;
+}
+
+header .nav .right ul li a:hover::after {
+    width: 40px;
+    /* Change width on hover */
+}
+header .nav .right ul li:first-child a::after {
+    width: 70%; /* Underline the first anchor */
+}
+
+header .nav .right ul li a:hover:not(:first-child)::after {
+    width: 90%; /* Full width on hover for all anchors except the first one */
+}
+
+header .nav .right ul li a::after {
+    content: '';
+    display: block;
+    width: 0;
+    height: 1px;
+    background-color: rgb(185, 185, 185);
+    position: absolute;
+    bottom: -5px;
+    left: 0;
+    transition: width 0.4s ease;
+}
+
+header .nav .right ul li a::after {
+    content: '';
+    display: block;
+    width: 0;
+    height: 1px;
+    background-color: rgb(185, 185, 185);
+    position: absolute;
+    bottom: -5px;
+    /* Adjust the position */
+    left: 0;
+    /* Start position from the left */
+    transition: width 0.4s ease;
+    /* Add transition for width */
+}
+
+header .nav .right ul li a:hover {
+    color: rgb(185, 185, 185);
+}
+
+.main {
+    min-height: 80vh;
+    /* Using viewport height to make the section responsive */
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.main .left {
+    width: 50%;
+    /* Using percentage for responsive width */
+    max-width: 500px;
+    /* Adding max-width for better responsiveness */
+    position: relative;
+    top: 10%;
+    left: 3%;
+    /* Using percentage for responsive positioning */
+}
+
+.main .right {
+    position: relative;
+    left: 4%;
+    /* Using percentage for responsive positioning */
+    bottom: 2.3rem;
+}
+
+.main .left .job span {
+    color: rgb(82, 255, 154);
+}
+
+.main .left .description {
+    color: rgb(148, 148, 148);
+    font-weight: 600;
+    line-height: 25px;
+    font-size: 1.1rem;
+}
+
+.services {
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+    position: relative;
+    top: 250px;
+}
+
+.services div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 300px;
+    height: 38vh;
+    background: rgb(0, 0, 0);
+    text-align: center;
+    border: 3px solid rgb(105, 105, 105);
+    padding: 0px 30px;
+    transition: transform 0.5s ease;
+}
+.services div:hover {
+    transform: scale(1.1); /* Scale up on hover */
+}
+#service{
+    font-family: "Poppins", sans-serif;
+    position: relative;
+    top: 200px;
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+}
+.services div h2{
+    font-family: "Poppins", sans-serif;
+}
+.services div p{
+    line-height: 30px;
+    position: relative;
+    top: 20px;
+    color: gray;
+    font-weight: 600;
+}
+.services div img{
+    position: relative;
+    bottom: 1.2rem;
+}
+#skills{
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    font-family: "Poppins", sans-serif;
+    position: relative;
+    top: 520px;
+}
+.skills {
+    display: flex;
+    flex-wrap: wrap; /* Allow wrapping to next line */
+    justify-content: space-between; /* Distribute items along the main axis with space between */
+    max-width: 900px; /* Set maximum width */
+    margin: 0 auto; /* Center align the container */
+    position: relative;
+    top: 550px;
+    gap: 0.7rem;
+}
+
+.skills div {
+    width: calc(50% - 20px); /* Set width for each div with some spacing */
+    max-width: 450px; /* Set maximum width for each div */
+    height: 40px;
+    background: #000000;
+    color: rgb(255, 255, 255);
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+.skills div .line{
+    width: 78%;
+    height: 20px;
+    background: rgb(82, 255, 154);
+    z-index: 9;
+    position: relative;
+    top: 20px;
+}
+.skills div p{
+    padding-left: 10px;
+    position: relative;
+    top: 10px;
+}
+#about{
+    font-family: "Poppins", sans-serif;
+    margin-left: 55px;
+    position: relative;
+    top: 680px;
+}
+.about p{
+    color: rgb(105, 105, 105);
+    font-weight: 700;
+    line-height: 30px;
+}
+.about{
+    padding-left: 55px;
+    padding-right: 55px;
+    position: relative;
+    top: 680px;
+}
+#contact{
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    font-family: "Poppins", sans-serif;
+    position: relative;
+    top: 780px;
+}
+.contact{
+    position: relative;
+    top: 800px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 1rem;
+}
+input{
+    width: 450px;
+    height: 60px;
+    background: transparent;
+    border: 1px solid rgb(82, 255, 154);
+    color: rgb(201, 201, 201);
+    padding-left: 10px;
+    font-weight: 500;
+    font-size: 1rem;
+}
+input::placeholder{
+    font-family: "Poppins", sans-serif;
+    font-weight: 500;
+    font-size: 1rem;
+    color: rgb(201, 201, 201);
+}
+input:focus{
+    outline: none;
+}
+.button{
+    background-color: rgb(82, 255, 154);
+    font-family: "Poppins", sans-serif;
+    width: 120px;
+    height: 60px;
+    border: none;
+    font-size: 0.9rem;
+    cursor: pointer;
+    transition: 0.6s ease background , 0.6s ease color;
+}
+.button:hover{
+    background: #111f3d;
+    color: white;
+}
+.newsletter{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    position: relative;
+    top: 850px;
+}
+footer{
+    position: relative;
+    top: 950px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin: auto;
+    width: 90%;
+    height: 82px;
+    border-top: 1px solid rgba(255, 255, 255, 0.603);
+}
+footer a{
+    color: white;
+    text-decoration: none;
+    transition: 0.8s ease color;
+}
+footer a:hover{
+    color: rgb(82, 255, 154);
+}
