@@ -44,6 +44,8 @@
     header .nav .right ul li{
         font-size: 0.6rem;
     }
+    .skills div{
+        width: 300px;
 }
 @media only screen and (max-width:465px){
     .contact input{
